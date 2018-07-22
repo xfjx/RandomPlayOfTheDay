@@ -53,11 +53,11 @@ if token:
 	    results = spotify.next(results)
 	    albums.extend(results['items'])
 
-	random_album = randint(0,len(albums))
+	random_album = randint(0,len(albums)-1)
 	print(albums[random_album]['name'])
 	while not re.match(artist['match'],albums[random_album]['name']):
 	    print "ungültiges Album!"
-    	    random_album = randint(0,len(albums))
+    	    random_album = randint(0,len(albums)-1)
 	    print(albums[random_album]['name'])
 
 	results = spotify.album_tracks(albums[random_album]['uri'])
