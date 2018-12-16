@@ -16,23 +16,27 @@ token = util.prompt_for_user_token(username,scope,client_id='*****',client_secre
 artists = []
 
 # Bibi Blocksberg
-artist = {"name" : "Bibi Blocksberg", "uri":"spotify:artist:3t2iKODSDyzoDJw7AsD99u", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3VImPHL1gckY0axplKMhal", "match": "Folge"}
+artist = {"name" : "Bibi Blocksberg", "uri":"spotify:artist:3t2iKODSDyzoDJw7AsD99u", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3VImPHL1gckY0axplKMhal", "match": "Folge", "album_type":"album"}
 artists.append(artist)
 
 # Bibi und Tina
-artist = {"name" : "Bibi und Tina", "uri":"spotify:artist:2x8vG4f0HYXzMEo3xNsoiI", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:2hUN7xBubyoW0kPBZyYtKH", "match":"Folge"}
+artist = {"name" : "Bibi und Tina", "uri":"spotify:artist:2x8vG4f0HYXzMEo3xNsoiI", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:2hUN7xBubyoW0kPBZyYtKH", "match":"Folge", "album_type":"album"}
 artists.append(artist)
 
 # Benjamin Blümchen
-artist = {"name" : "Benjamin Blümchen", "uri":"spotify:artist:1l6d0RIxTL3JytlLGvWzYe", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3w5mJesfrZrGN3jSjPJG1t", "match":"Folge"}
+artist = {"name" : "Benjamin Blümchen", "uri":"spotify:artist:1l6d0RIxTL3JytlLGvWzYe", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3w5mJesfrZrGN3jSjPJG1t", "match":"Folge", "album_type":"album"}
 artists.append(artist)
 
 # Die drei ???
-artist = {"name" : "Die drei ???", "uri":"spotify:artist:3meJIgRw7YleJrmbpbJK6S", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:0QRh6dDWyOtS4AX1xyFkDy","match":""}
+artist = {"name" : "Die drei ???", "uri":"spotify:artist:3meJIgRw7YleJrmbpbJK6S", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:0QRh6dDWyOtS4AX1xyFkDy", "match":"", "album_type":"album"}
 artists.append(artist)
 
 # TKKG
-artist = {"name" : "TKKG", "uri":"spotify:artist:61qDotnjM0jnY5lkfOP7ve", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:57MRp4abeiVLfS8tBE9n6q","match":""}
+artist = {"name" : "TKKG", "uri":"spotify:artist:61qDotnjM0jnY5lkfOP7ve", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:57MRp4abeiVLfS8tBE9n6q", "match":"", "album_type":"album"}
+artists.append(artist)
+
+# TKKG Retro
+artist = {"name" : "TKKG-Retro", "uri":"spotify:artist:0i38tQX5j4gZ0KS3eCMoIl", "playlist":"spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:4ePpHGeJKtDI6NMJ3vEg2P","match":"", "album_type":"single"}
 artists.append(artist)
 
 if token:
@@ -47,7 +51,7 @@ if token:
 
     for artist in artists:
 	print artist['name']
-	results = spotify.artist_albums(artist['uri'], album_type='album')
+	results = spotify.artist_albums(artist['uri'], album_type=artist['album_type'])
 	albums = results['items']
 	while results['next']:
 	    results = spotify.next(results)
