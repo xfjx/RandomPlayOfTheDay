@@ -1,0 +1,253 @@
+[
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:0QRh6dDWyOtS4AX1xyFkDy", 
+    "name": "Die drei ???", 
+    "match": "\\d{3}\\/", 
+    "uri": "spotify:artist:3meJIgRw7YleJrmbpbJK6S"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:4ePpHGeJKtDI6NMJ3vEg2P", 
+    "name": "TKKG-Retro", 
+    "match": "", 
+    "uri": "spotify:artist:0i38tQX5j4gZ0KS3eCMoIl"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3VImPHL1gckY0axplKMhal", 
+    "name": "Bibi Blocksberg", 
+    "match": "Folge", 
+    "uri": "spotify:artist:3t2iKODSDyzoDJw7AsD99u"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:2hUN7xBubyoW0kPBZyYtKH", 
+    "name": "Bibi und Tina", 
+    "match": "Folge", 
+    "uri": "spotify:artist:2x8vG4f0HYXzMEo3xNsoiI"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:3w5mJesfrZrGN3jSjPJG1t", 
+    "name": "Benjamin Bl\u00fcmchen", 
+    "match": "Folge", 
+    "uri": "spotify:artist:1l6d0RIxTL3JytlLGvWzYe"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:57MRp4abeiVLfS8tBE9n6q", 
+    "name": "TKKG", 
+    "match": "", 
+    "uri": "spotify:artist:61qDotnjM0jnY5lkfOP7ve"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:1b0ThuGiz7nNFpZ8CSwxwj", 
+    "name": "John Sinclair", 
+    "match": "", 
+    "uri": "spotify:artist:6lly2jn9MqaxaWRrkEzOsJ"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:7sPwUKkw5XOrXz8Dj8YYot", 
+    "name": "Gruselkabinett", 
+    "match": "", 
+    "uri": "spotify:artist:3Y8Wq2s2COAGIMVXhXwroz"
+  }, 
+  {
+    "playlist": "spotify:playlist:2Z9tcxZVbrwnarVLWqZ9gU", 
+    "name": "Bob der Baumeister", 
+    "match": "", 
+    "uri": "spotify:artist:0nNcNNBedN3GKqhlUsAObU"
+  }, 
+  {
+    "playlist": "spotify:playlist:19Yt8B6nQzgtRZIDDfX2xj", 
+    "name": "PAW Patrol", 
+    "match": "", 
+    "uri": "spotify:artist:1JPhbKU3boL67fftU3U1ED"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:7MsODowWpn18qBR2SlpEbW", 
+    "name": "Offenbarung 23", 
+    "match": "", 
+    "uri": "spotify:artist:132DIQGHJY3lyi2lNosLzy"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:5AnQvluMfTJwWp8BiRZYSQ", 
+    "name": "F\u00fcnf Freunde", 
+    "match": "", 
+    "uri": "spotify:artist:1hD52edfn6aNsK3fb5c2OT"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:4OaeGtwPQALgpLSNMxbwKj", 
+    "name": "Hanni und Nanni", 
+    "match": "", 
+    "uri": "spotify:artist:3iiABQlNuezpR3DcrlyPoA"
+  }, 
+  {
+    "playlist": "spotify:user:cn3capl0ebtv8nvgu2ahfvdsc:playlist:61Sv3iwvtZJMdMJW1blGyq", 
+    "name": "Feuerwehrmann Sam", 
+    "match": "Folgen", 
+    "uri": "spotify:artist:4qhaHyCtCaFugTqT9LzuKp"
+  }, 
+  {
+    "playlist": "spotify:playlist:5F5deHb77plVx5tue8ETyu", 
+    "name": "Leo Lausemaus", 
+    "match": "", 
+    "uri": "spotify:artist:6b9DQDp0xKeYM2vdK9pAE6"
+  }, 
+  {
+    "playlist": "spotify:playlist:3bzMTc5hSQFdEReOhteJC9", 
+    "name": "Die drei Fragezeichen Kids", 
+    "match": "", 
+    "uri": "spotify:artist:0vLsqW05dyLvjuKKftAEGA"
+  }, 
+  {
+    "playlist": "spotify:playlist:2uyX0k2YunDHIKBKjSAWoJ", 
+    "name": "Go Wild! - Mission Wildnis", 
+    "match": "", 
+    "uri": "spotify:artist:3d3HZUVqLqAp3CbKVQbXEn"
+  }, 
+  {
+    "playlist": "spotify:playlist:5SlL5UrGjCfzX4MGfj3dZY", 
+    "name": "Was ist Was", 
+    "match": "", 
+    "uri": "spotify:artist:7zNPHpOB4uBduLjmEZzzpy"
+  }, 
+  {
+    "playlist": "spotify:playlist:0ElRAI8J1shECqGT5OpT7Q", 
+    "name": "LEGO Ninjago", 
+    "match": "", 
+    "uri": "spotify:artist:3YVNhnRJA4fODe4IyUIeWN"
+  }, 
+  {
+    "playlist": "spotify:playlist:3BzkGvAPgIS5ahVCgg5yGx", 
+    "name": "Schlau wie vier", 
+    "match": "", 
+    "uri": "spotify:artist:2a5yLTCUCibDJdUVnH7kLP"
+  }, 
+  {
+    "playlist": "spotify:playlist:1hrY3Qtt0uAkokdTWfzHVa", 
+    "name": "Pettersson und Findus", 
+    "match": "Folge ", 
+    "uri": "spotify:artist:3YZqnPKdtP5qP4LSvrgx9i"
+  }, 
+  {
+    "playlist": "spotify:playlist:5AUMK5wJKrbbR8uxfQnrCF", 
+    "name": "Tabaluga", 
+    "match": "", 
+    "uri": "spotify:artist:4M0PZyOPSvjzFEBRg3G8xA"
+  }, 
+  {
+    "playlist": "spotify:playlist:6KUDiKySjjznuYhWx4yzNk", 
+    "name": "In einem Land vor unserer Zeit", 
+    "match": "", 
+    "uri": "spotify:artist:229yPx5ZNvL8LchbGZizm2"
+  }, 
+  {
+    "playlist": "spotify:playlist:5hgoyfJnADAaD877pn8LtC", 
+    "name": "Lego City", 
+    "match": "", 
+    "uri": "spotify:artist:7lWAti8HlNyw39Z5OI92Ep"
+  }, 
+  {
+    "playlist": "spotify:playlist:0ckrqbMsSHu135vaUMm4mi", 
+    "name": "Panki aus Pankanien", 
+    "match": "", 
+    "uri": "spotify:artist:1SqL713x3XwBzzLGKFZhyF"
+  }, 
+  {
+    "playlist": "spotify:playlist:4imzG99bMgvMiR5T80SxzW", 
+    "name": "Die Playmosl", 
+    "match": "", 
+    "uri": "spotify:artist:1QIbeCbJNuFMKhZMY1rey8"
+  }, 
+  {
+    "playlist": "spotify:playlist:4y9Ts1VAUrlCbP9OL8cBQt", 
+    "name": "Ritter Rost", 
+    "match": "", 
+    "uri": "spotify:artist:6zn86iqNCkQZqsBvEv6oBO"
+  }, 
+  {
+    "playlist": "spotify:playlist:2xR1ijub3VAfyoXcgS3f5p", 
+    "name": "Urmel", 
+    "match": "", 
+    "uri": "spotify:artist:2rXcbVxepZAkQVGiZg1Cjt"
+  }, 
+  {
+    "playlist": "spotify:playlist:0WK0gWaB8HUboQce2pMHj1", 
+    "name": "Max", 
+    "match": "", 
+    "uri": "spotify:artist:6GAMZ3hkA2y52fMzSXeADA"
+  }, 
+  {
+    "playlist": "spotify:playlist:1FN0cSVOejortIyBwnSyyS", 
+    "name": "K\u00e4pt'n Sharky", 
+    "match": "", 
+    "uri": "spotify:artist:5TfrI6jiBpIpWRsrEXVtFN"
+  }, 
+  {
+    "playlist": "spotify:playlist:2yPvrudi0cmRkBSkt3j5IJ", 
+    "name": "Meine Freundin Conni", 
+    "match": "", 
+    "uri": "spotify:artist:0HerMOOFZXxIF3Yg9BVl0W"
+  }, 
+  {
+    "playlist": "spotify:playlist:5nFwivb01K1Lh0lNK5igfi", 
+    "name": "Super Wings", 
+    "match": "", 
+    "uri": "spotify:artist:59uRJqQVtXNAhUCGfMssK3"
+  }, 
+  {
+    "playlist": "spotify:playlist:2CA7c5cdoHXLtoc2K82Lzm", 
+    "name": "Sherlock Holmes", 
+    "match": "Die neuen F", 
+    "uri": "spotify:artist:2YlvvdXUqRjiXmeL2GRuZ9"
+  }, 
+  {
+    "playlist": "spotify:playlist:6X5IYVlVyLx6QZENUeYRI9", 
+    "name": "Sherlock Holmes", 
+    "match": "Die alten F", 
+    "uri": "spotify:artist:2YlvvdXUqRjiXmeL2GRuZ9"
+  }, 
+  {
+    "playlist": "spotify:playlist:6X6sicAZaF6dvgkbmmEtvw", 
+    "name": "Der kleine Hui Buh", 
+    "match": "", 
+    "uri": "spotify:artist:5uXwgEQqIIIMsyi0LlRZDn"
+  }, 
+  {
+    "playlist": "spotify:playlist:7DfZEOwhMHEkpmozu1Yha5", 
+    "name": "Der kleine Rabe Socke", 
+    "match": "", 
+    "uri": "spotify:artist:6NdYPh29DHFBbiYzcK7Nb0"
+  }, 
+  {
+    "playlist": "spotify:playlist:07PaIUextmwTfNfigCLiDd", 
+    "name": "Was Ist Was Junior", 
+    "match": "", 
+    "uri": "spotify:artist:4MpuODBeOH8gBHqVZtXa7U"
+  }, 
+  {
+    "playlist": "spotify:playlist:5QOOMrp8D4DGBlMQ82fKE4", 
+    "name": "Die Olchis", 
+    "match": "", 
+    "uri": "spotify:artist:32Aa42Dbmqm4GKsv3wUSMb"
+  }, 
+  {
+    "playlist": "spotify:playlist:3ZKXw05zpj1IWIbyf6GSQK", 
+    "name": "Peppa Pig H\u00f6rspiele", 
+    "match": "", 
+    "uri": "spotify:artist:46iD7xFc8ubzILibDQ7fL7"
+  }, 
+  {
+    "playlist": "spotify:playlist:4KO9aMKixfTTeljybvQQRe", 
+    "name": "Schule der magischen Tiere", 
+    "match": "^((?!Film).*)", 
+    "uri": "spotify:artist:1BElEHaU2xaZg7FOGsSird"
+  }, 
+  {
+    "playlist": "spotify:playlist:1FyGV1kmOPpbakcl4NOZTw", 
+    "name": "Point Whitmark", 
+    "match": "^((?!Film).*)", 
+    "uri": "spotify:artist:39cu39Rn69BTbnblNDijGN"
+  }, 
+  {
+    "playlist": "spotify:playlist:3dyEwL4gAXZXfir1DD77sR", 
+    "name": "Teufelskicker", 
+    "match": "\\d{2,3}\\/", 
+    "uri": "spotify:artist:752p3IcSA76CVOvqoGcFWH"
+  }
