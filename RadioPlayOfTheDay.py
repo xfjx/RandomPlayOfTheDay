@@ -24,15 +24,6 @@ with open('RadioPlayOfTheDay.json', 'r') as json_data:
 
 if token:
     spotify = spotipy.Spotify(auth=token)
-
-# Die Playlisten können auch per Python angelegt werden, das darf aber nur 1x passieren!
-#    results = spotify.user_playlist_create(user=username, name='Täglich neu: Benjamin Blümchen', public=True) #, description='Jeden Tag ein anderes, zufälligs Hörspiel von Benjamin Blümchen')
-#    results = spotify.user_playlist_create(user=username, name='Täglich neu: Bibi Blocksberg', public=True) #, description='Jeden Tag ein anderes, zufälligs Hörspiel von Benjamin Blümchen')
-#    results = spotify.user_playlist_create(user=username, name='Täglich neu: Bibi und Tina', public=True) #, description='Jeden Tag ein anderes, zufälligs Hörspiel von Benjamin Blümchen')
-#    results = spotify.user_playlist_create(user=username, name='Täglich neu: TKKG', public=True) #, description='Jeden Tag ein anderes, zufälligs Hörspiel von Benjamin Blümchen')
-#    results = spotify.user_playlist_create(user=username, name='Täglich neu: Die drei ???', public=True) #, description='Jeden Tag ein anderes, zufälligs Hörspiel von Benjamin Blümchen')
-
-
     album_types = ['single','album']
 
     for artist in artists:
