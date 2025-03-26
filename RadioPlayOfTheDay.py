@@ -17,13 +17,22 @@ os.chdir("/home/vossxebu/RadioPlayOfTheDay")
 
 scope = 'user-library-read user-library-modify playlist-read-private playlist-modify-public playlist-modify-private playlist-read-collaborative user-follow-modify user-follow-read user-read-private user-read-email'
 username = 'cn3capl0ebtv8nvgu2ahfvdsc'
-token = util.prompt_for_user_token(username,scope,client_id='XXX',client_secret='XXX',redirect_uri='http://localhost')
+token = util.prompt_for_user_token(username,scope,client_id='xxx',client_secret='xxx',redirect_uri='http://localhost:8080')
 
 with open('RadioPlayOfTheDay.json', 'r') as json_data:
     artists = json.load(json_data)
 
 if token:
     spotify = spotipy.Spotify(auth=token)
+
+# Die Playlisten kÃ¶nnen auch per Python angelegt werden, das darf aber nur 1x passieren!
+#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Benjamin BlÃ¼mchen', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
+#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Bibi Blocksberg', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
+#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Bibi und Tina', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
+#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: TKKG', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
+#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Die drei ???', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
+
+
     album_types = ['single','album']
 
     for artist in artists:
@@ -47,7 +56,7 @@ if token:
         random_album = randint(0,len(albums)-1)
 #       print(albums[random_album]['name'])
         while not re.match(artist['match'],albums[random_album]['name']):
-            print "ungültiges Album!"
+            print "ungÃ¼ltiges Album!"
             print albums[random_album]['name'];
             random_album = randint(0,len(albums)-1)
 
@@ -70,17 +79,17 @@ if token:
             if not re.match(".*Inhaltsangabe.*",track['name']):
                 playlist_tracks.append(track['uri'])
             else:
-                print("Inhaltsangabe übersprungen")
+                print("Inhaltsangabe Ã¼bersprungen")
 
-#       print len(tracks), "Tracks..."
+        print len(tracks), "Tracks..."
         while True:
             try:
-                results = spotify.user_playlist_replace_tracks(user=username,playlist_id=artist['playlist'],tracks=playlist_tracks[0:99])
+                results = spotify.playlist_replace_items(playlist_id=artist['playlist'],items=playlist_tracks[0:99])
 
-                # Da nicht mehr als 100 Tracks auf einmal hinzugefügt werden dürfen:
+                # Da nicht mehr als 100 Tracks auf einmal hinzugefÃ¼gt werden dÃ¼rfen:
                 x = 99
                 while x < len(tracks):
-                    results = spotify.user_playlist_add_tracks(user=username,playlist_id=artist['playlist'],tracks=playlist_tracks[x:x+99])
+                    results = spotify.playlist_add_items(playlist_id=artist['playlist'],items=playlist_tracks[x:x+99])
                     x+=99
             except:
                 continue
