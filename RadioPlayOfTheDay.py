@@ -25,14 +25,6 @@ with open('RadioPlayOfTheDay.json', 'r') as json_data:
 if token:
     spotify = spotipy.Spotify(auth=token)
 
-# Die Playlisten kÃ¶nnen auch per Python angelegt werden, das darf aber nur 1x passieren!
-#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Benjamin BlÃ¼mchen', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
-#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Bibi Blocksberg', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
-#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Bibi und Tina', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
-#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: TKKG', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
-#    results = spotify.user_playlist_create(user=username, name='TÃ¤glich neu: Die drei ???', public=True) #, description='Jeden Tag ein anderes, zufÃ¤lligs HÃ¶rspiel von Benjamin BlÃ¼mchen')
-
-
     album_types = ['single','album']
 
     for artist in artists:
@@ -56,7 +48,7 @@ if token:
         random_album = randint(0,len(albums)-1)
 #       print(albums[random_album]['name'])
         while not re.match(artist['match'],albums[random_album]['name']):
-            print "ungÃ¼ltiges Album!"
+            print "ungültiges Album!"
             print albums[random_album]['name'];
             random_album = randint(0,len(albums)-1)
 
@@ -79,14 +71,14 @@ if token:
             if not re.match(".*Inhaltsangabe.*",track['name']):
                 playlist_tracks.append(track['uri'])
             else:
-                print("Inhaltsangabe Ã¼bersprungen")
+                print("Inhaltsangabe übersprungen")
 
         print len(tracks), "Tracks..."
         while True:
             try:
                 results = spotify.playlist_replace_items(playlist_id=artist['playlist'],items=playlist_tracks[0:99])
 
-                # Da nicht mehr als 100 Tracks auf einmal hinzugefÃ¼gt werden dÃ¼rfen:
+                # Da nicht mehr als 100 Tracks auf einmal hinzugefügt werden dürfen:
                 x = 99
                 while x < len(tracks):
                     results = spotify.playlist_add_items(playlist_id=artist['playlist'],items=playlist_tracks[x:x+99])
